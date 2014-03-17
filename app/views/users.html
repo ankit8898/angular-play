@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+<div class="panel-heading">All Users</div>
+</div>
+
+<table class="table">
+<tr ng-repeat="user in users">
+ <td>{{user.name}}</td>
+ <td>{{user.age}}</td>
+</tr>
+
+</table>
+
+
+<div class="panel panel-default">
+<div class="panel-heading">New User</div>
+</div>
+
+<form ng-submit="submit()">
+  Enter text and hit enter:
+  <input type="text" ng-model="name" name="text" class="form-control" />
+  <input type="text" ng-model="age" name="text" class="form-control" />
+  <input type="submit" id="submit" value="Submit" class="btn">
+</form>
