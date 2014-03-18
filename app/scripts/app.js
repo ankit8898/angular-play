@@ -4,7 +4,8 @@ angular.module('angularLearning2App', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'highcharts-ng'
 ])
   .config(function ($routeProvider) {
     $routeProvider
