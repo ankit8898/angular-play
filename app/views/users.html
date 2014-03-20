@@ -4,8 +4,14 @@
 </div>
 
 <table class="table">
+ <thead>
+ 	<th>Name </th>
+ 	<th>Reversed Name</th>
+ 	<th>Age</th>
+ </thead>
 <tr ng-repeat="user in users">
  <td>{{user.name}}</td>
+ <td>{{user.name|reverse}}</td>
  <td>{{user.age}}</td>
 </tr>
 
@@ -22,3 +28,4 @@
   <input type="text" ng-model="age" name="text" class="form-control" />
   <input type="submit" id="submit" value="Submit" class="btn">
 </form>
+
